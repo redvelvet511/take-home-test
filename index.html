@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Social.Ly</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/3fcd1019c4.js" crossorigin="anonymous"></script>
+
+  <link href="css/index.css" rel="stylesheet" />
+  <link href="css/checkbox.css" rel="stylesheet" />
+  <link href="css/dialog.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-section">
+      <img src="assets/company-title.svg" alt="Social.Ly" />
+      <h1>Get More From Your <span class="title-highlight">Content</span>.</h1>
+      <h4 id="product-description">Social.Ly helps you optimize your brands’ publications to reach a larger audience,
+        integrating social content
+        with your website.</h4>
+    </div>
+
+    <div class="right-section">
+      <p id="limited-offer">Limited Offer</p>
+      <div class="right-inner-section">
+
+        <h3 id="form-title">Sign up to get your free trial today!</h3>
+        <form id="form">
+          <label class="form-label">Name</label>
+          <input id="name" class="text-input" type="text" name="name" placeholder="Enter your name" required />
+          <label class="form-label">Email</label>
+          <input id="email" class="text-input" type="email" name="email" placeholder="Enter your email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+          <label class="custom-checkbox">
+            <input type="checkbox" required />
+            <span class="checkmark"></span>
+            <p id="terms-text">I agree to the <span id="terms-and-conditions">terms and conditions</span></p>
+          </label>
+          <input id="submit-btn" type="submit" value="Start My Free Trial" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="dialog" class="hidden">
+    <div class="dialog-content">
+      <img class="dialog-img" src="./assets/welcome.png" />
+      <p id="dialog-title">Welcome, name!</p>
+      <p id="dialog-description">Thanks for filling out the form. A confirmation email has been sent to your domain
+        account.</p>
+      <button id="dialog-close"><i class="fa fa-solid fa-xmark fa-sm"></i></button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js" type="text/javascript"></script>
+  </script>
+</body>
+
+</html>

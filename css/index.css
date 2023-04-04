@@ -84,7 +84,7 @@ p {
   max-width: 408px;
   border: 2px solid #ecedf2;
   border-radius: 24px;
-  padding: 47px 30px 50px 30px;
+  padding: 47px 30px 44px 30px;
 }
 
 #limited-offer {
@@ -144,6 +144,15 @@ p {
   line-height: 28px;
 }
 
+#terms-error-msg {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #fd0272;
+  text-align: left;
+  display: none;
+}
+
 button,
 input {
   background: none;
@@ -169,6 +178,7 @@ input {
   padding: 18px 101px 17px 101px;
   width: 100%;
   border-radius: 12px;
+  margin-bottom: 6px;
 }
 
 /* Screen Responsiveness */
@@ -189,5 +199,15 @@ input {
 
   #product-description {
     max-width: unset;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .left-section {
+    padding: 0px 24px;
+  }
+
+  #limited-offer {
+    left: 0px;
   }
 }

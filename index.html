@@ -43,11 +43,12 @@
           <input id="email" class="text-input" type="email" name="email" placeholder="Enter your email"
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
           <label class="custom-checkbox">
-            <input type="checkbox" required />
+            <input id="terms-checkbox" type="checkbox" />
             <span class="checkmark"></span>
             <p id="terms-text">I agree to the <span id="terms-and-conditions">terms and conditions</span></p>
           </label>
           <input id="submit-btn" type="submit" value="Start My Free Trial" />
+          <span id="terms-error-msg">You must agree to the terms and conditions to proceed.</span>
         </form>
       </div>
     </div>
